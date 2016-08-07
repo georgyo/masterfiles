@@ -12,6 +12,7 @@ body common control
                         # Common bundle first (Best Practice)
                           inventory_control,
                           @(inventory.bundles),
+                          my_test,
                           def,
                           @(cfengine_enterprise_hub_ha.classification_bundles),
 
@@ -53,6 +54,7 @@ body common control
                   # autorun system
                   @(services_autorun.inputs),
 
+                  "my-policy.cf",
                   "services/main.cf",
       };
 
