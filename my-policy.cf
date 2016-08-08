@@ -3,4 +3,8 @@ bundle agent my_test{
   linux::
    "/tmp/hello-world"
      create => "true";
+  cfpolserv::
+   "/tmp/i_am_polserver"
+     create => "true";  
+
 }
